@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./CSS/Formularios.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Regístrate en los formularios</h3>
+        <div class="buttons">
+            <button class="google-btn">
+                <picture>
+                    <img src="https://entredichos.trabajosocial.unlp.edu.ar/wp-content/uploads/sites/6/2016/12/Google_-G-_Logo.svg_.png" alt="logo-google" />
+                </picture>
+                <span>Registrarse con Google</span>
+            </button>
+            <button class="twitter-btn">
+                <picture>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX
+                    ///9VrO5KqO1Pqu5Fpu3r9f1br+/z+f75/P7k8fzb7PvC3/h1uvHR5/qv1vbv9/2m0fWPxvNstvCbzPTJ4/l/v/
+                    JntPC72/en0vWVyfTh7/zG4vmKxPOz2Pe93fjY6vtcihMzAAAHqElEQVR4nO2d666iMBSFpbsiCiigoCge3/8tR7
+                    xfQGi7Cp1kf8n8mEmGdEHbfW2dTBiGYRiGYRiGYRiGYRiGYRiGYRiGYRiG0SBYHHZlFdXkZRIuZmMPCEqwKQshBD0
+                    5/82vwtXYA8MQhPlZnPcNCRkd+4kMLI/RhNnOb5R3F0npovMZQTkfYKSa7Khd3l1ktP/9jD/PH2awGmw80aHvolF
+                    WP+ZqXEiRDDdkJYJK9tB30eiFLc+II0me0J2kJ7tb2cnvmqAvyLLpEZuoXsMU6Q4h0/6ffVj+2GCaPmP2aSBny9s
+                    eJU+aQ9hIUZnKaCftO0MfEr3py3+fbXJ5W8MGn/A8wdcALU0EeZ8t5kOif19u07B6MTGi25w0s6hfstihNL0RRE
+                    oz9CFxNQn2YVrQ6wSnxhXah/Q6x49IZXe0BNYSfVn7dm//6Ov6M7PbA+QWqu1CpT5FW5Gx7igO91GINlOkTQIUaL
+                    BTVM+VDJa4AQrU30cnM//5GPkH1DdZ6a3BZoG+fhS5eDVX0LWYIxUaxBTHt6kkljCBB1VL/4N3S3hQ21Sr9zctUa
+                    Y/8FtGqw7Ri7cWbH3FIRYfj5MpRiFuHyX/8QWDOBXCU1ySXwMROSJTMGsaq57A4uamrjapX0dQitvh9Hu1UAEIpp
+                    aoTyivQcHimHsXF45yxZGcGvYD0nZxn4D0ecVhMj0kkZQPF07VbDRbZdWZ8P1Y0EZKeeTJVwdVKIeIYfNsEtp+/B
+                    WYLfzwvqW6NWtR6ImvSFuFGdBfexuVxotvU3h+eQd9hQc7CoXqLvNTYf3CtM1GCnTYnlCkM6D4x9sWRUeGtpXChk
+                    I9ge+O99czNTOwU4cETla/t3W9z/hrYuiitQYvdLxuorX6q1viv6GB+co6Cya+8qZawhWahDw9tj3ZVRP6BBn71p
+                    CRj3XssWZIlNPuJz3pnBeKAn3dbP6FfS8Pkrx1fx8n+Iw5zRCR0uvVHg5R0nfLAYb3XlsxSoXe/sdZY7+XGSAFknn
+                    +TyGrSX1q7We/G7kMyTwcV3rjgqLutDFWodkivFAqeSAkaN1hPKCzVAAUzpVLmLJY/srQQncaCVCoUQI7f8ho17o
+                    kodYCorApG9UtkshPN81GUrNqaE+htpdFQvplOP2ykxVQIWIdnj+iwYhqlfn6b/Gqc42sG0IUmmYd6g5Dr4iqZBu
+                    f5qtgskVWnTAKITn4aytl3VGJeNoDUDcTKoOLx6A0+o6d7BgAmMLASnoMQAHrmZ16Tko06FD4YuGmQu0U252Xvdh
+                    GDtAYMu4pLIu/x0SP1dokB4GM+wp2Qsg0voncq7S6DoMwbrf7E3U05KeHy3SdRa7NVLExVXhbfCS8rNyepsFyZEW
+                    fmBfcn+Fv7XOBHS4AALfUOU3vaDeVPgHnp8FQZixQMQ81NObm8GeZ2wEI0ElopV4LQ2i3Pr/g9EKUiPg3cVkhAQQ6
+                    GlNcMY8sLrga+54hzDkXC30FKPTPWLwROJuF8giUpHHW6MNSGFNnFcJO1OH7XzCAluGkzrO5iY87vbtzcp4iM4lu2
+                    kTzHM0L/fqGBsbksNM3sPMRQAqkQGzdFgPIZXvgXmlGom/5mDlWmiHwJJ04V30CHoV8MHcqqQ8q4L8zdUgiKPj9R
+                    OeOB0sIgyM7P0lcqbABkt0txG7MVFzg1EDpwmfEtLO1sc/l2Bot7TNPTvnI31Gan9PtYr4mOV41ERoZthMnGfRYg
+                    QLmte023pd3ME3GkWjxE+ZZtdse4jgOj0kV/boF0CrWrP1kEspLB6W4dlGOI89KVPHECacNl0RsYD22IfRsb6Qup
+                    L8t28LxO2kJdH1MGw6U9a16pJPxV6Kly/9egB7L0mCAW2bHbdvXvsBThTFzw/q3P6owGzHKh509+M1+NIX2YooPw
+                    pGW4jBz9MJyHIn28mvfJGNIHCB18cII9UQbhYpfbIcOf62n175QumccIHAgQ/HKatDDF1L3TiojjsNlMvCXGPdjmg
+                    60Gkf80YPFIBl+REu+PvuKbH9IAThVYcTsGHk2DwwR7iSsPquwzIQUZEMo+bbzFn2ZLcJlWeVwgdjmLnPQ8TGBroV
+                    AAT9lSt6g7nYnf+hlSN4orkwbAfLHHK4C3VqDMcEFOrOL1qyUfxGnW2Dm0g/KHfFtfULzylUrxAU+kBKWKzAqnCIL
+                    3vfQOYsfxDaiCyKbdV4lwsJGYOHMJrpfN//mpCmOLMH5MrMT/BKNlLF445RktuJekY3txwSnYw6/kuyB7iXoGGmz
+                    +WaZFtJmx57+RfYabNe74/YvDMPtcZms0zzySVq+3ITQx2A6CM+K7h1egzR5yWjwFbgesjZB/hhb6LwaSqPCZdlg
+                    rPic3/pkOqITExe2NZLMRzaBh8zmXBUidyAXE1ubqyRSB/TVLCobMZLoe1H9IKwSDztZSRTQ38REsMlh7jYJv3Qr
+                    13tjuo0Abun5PVWH4cvyfanjQpMvSULmobvyrqy2ua/lhJ8/nl8O1ZtmSHBKcl8l1qgPahTV1hHT0JPZ4lhmslNm
+                    fY+39KL14fv6+f+CYB8meUG3YzTvXEOvLD1uHLJ6uqz2cbhMyiqPoig7/8nzdJ1sN6f5//ndGIZhGIZhGIZhGIZh
+                    GIZhGIZhGIZhGGZE/gHrSXWtmsv93QAAAABJRU5ErkJggg==" alt="Logo Twitter">
+                </picture>
+            </button>
+        </div>
+        <div class="separator">
+            <hr>
+            <span>O...</span>
+            <hr>
+        </div>
+        <form action="" method="">
+            <div class="section-inputs">
+                <label for="name">
+                    <span>Name</span>
+                    <input id="name" name="name" />
+                </label>
+                <label for="username">
+                    <span>Username</span>
+                    <input id="username" name="username" />
+                </label>
+            </div>
+            <label for="email">
+                <span>Email</span>
+                <input id="email" name="email" />
+            </label>
+            <label for="password">
+                <span>Password</span>
+                <input id="password" name="password" placeholder="6+ caracteres" />
+            </label>
+            <label for="checkbox" class="checkbox-label">
+                <input type="checkbox" id="checkbox">
+                <span>Acepto las condiciones y el aviso legal</span>
+            </label>
+            <button type="submit" class="submit-btn">Crear Cuenta</button>
+        </form>
+    </div>
+</body>
+
+</html>

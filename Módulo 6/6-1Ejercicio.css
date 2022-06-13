@@ -1,0 +1,30 @@
+        .button {
+            width: 300px;
+            height: 200px;
+            border-radius: 300px;
+            border-color: grey;
+            background-color: darkblue;
+            color: greenyellow;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 200%;
+        }
+        
+        .button:hover::before {
+            background-color: green;
+            color: white;
+            content: "Hecho";
+        }
+        
+        .button:hover {
+            background-color: green;
+        }
+        
+        .button::before {
+            content: "Pasa por encima"
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }

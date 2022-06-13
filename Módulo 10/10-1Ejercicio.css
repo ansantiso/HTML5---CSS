@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+body {
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    min-height: 100vh;
+}
+
+.lateral {
+    background-color: #696b46;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 5px;
+    margin-right: 5px;
+    order: 1;
+}
+
+.principal {
+    background-color: #b99555;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-grow: initial;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+.btn {
+    color: white;
+    background-color: #394736;
+    border: none;
+    border-bottom: 2px solid grey;
+    padding: 0.5rem 0.4rem;
+    margin: 1rem;
+    font-size: large;
+    border-radius: 10px;
+    width: auto;
+}
+
+.btn:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .lateral {
+        width: 100%;
+        order: 2;
+        margin: 0px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .principal {
+        order: 1;
+        height: 100%;
+        margin-bottom: 5px;
+    }
+    .btn {
+        font-size: medium;
+        width: 10rem;
+    }
+}
