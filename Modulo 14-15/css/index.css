@@ -1,0 +1,191 @@
+.btn-main, .btn-main-sm {
+  border-radius: 0.25rem;
+  padding: 0.25rem 1.5rem;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #0075ff;
+  border: solid 1px #0075ff;
+}
+.btn-main:hover, .btn-main-sm:hover {
+  background-color: white;
+  color: #0075ff;
+}
+.btn-main-sm {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.btn-sec, .btn-sec-sm {
+  border-radius: 0.25rem;
+  padding: 0.25rem 1.5rem;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+.btn-sec:hover, .btn-sec-sm:hover {
+  color: #888;
+}
+.btn-sec-sm {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.main-menu {
+  margin-bottom: 0;
+  padding: 0;
+  width: auto;
+}
+.main-menu li {
+  list-style: none;
+  font-size: 0.85rem;
+  display: inline;
+  padding: 0.25rem 0.5rem;
+}
+.main-menu li:hover {
+  font-size: 0.95rem;
+  border-bottom: 1px solid #0075ff;
+}
+.main-menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.icon-sm i {
+  padding: 0.4rem 0.65rem;
+  color: #0075ff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 50%;
+  font-size: 1.25rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+}
+.feature .icon {
+  color: #0075ff;
+  font-size: 8rem;
+  text-align: center;
+}
+.feature .description .title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.feature .description .text {
+  color: #888;
+  font-weight: 600;
+  text-align: center;
+}
+.feature .cta {
+  color: #0075ff;
+  margin-top: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon-desc .icon {
+  color: #0075ff;
+  font-size: 8rem;
+  padding: 0;
+  text-align: center;
+}
+.icon-desc .title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -2rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 4rem;
+  border-bottom: solid 1px #ddd;
+}
+.nav .logo a img {
+  max-width: 7rem;
+}
+
+.sec-home {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 3rem;
+  max-width: 992px;
+  margin: auto;
+}
+.sec-home .home-cta {
+  flex: 1;
+}
+.sec-home .home-cta .cta-text {
+  color: #0075ff;
+}
+.sec-home .home-cta .home-title {
+  width: 20rem;
+  font-size: 3rem;
+}
+.sec-home .home-cta .home-description {
+  color: #444;
+}
+
+.sec-features {
+  width: 100%;
+  padding: 3rem;
+  max-width: 992px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-features .intro {
+  text-align: center;
+}
+.sec-features .intro h3 {
+  font-size: 1.8rem;
+}
+.sec-features .intro p {
+  font-size: 0.9rem;
+  color: #888;
+}
+.sec-features .features {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.sec-features .features .text {
+  padding: 2rem 0rem;
+  flex: 1;
+}
+.sec-features .features .text .feature {
+  display: flex;
+  flex-direction: row;
+}
+.sec-features .features .text .feature .description {
+  margin-left: 1rem;
+  max-width: 20rem;
+}
+.sec-features .features .text .feature .description .description-title {
+  font-size: 1.15rem;
+}
+.sec-features .features .text .feature .description .description-text {
+  font-size: 1rem;
+}
+.sec-features .features .image {
+  max-width: 20rem;
+}
+
+/*# sourceMappingURL=index.css.map */
