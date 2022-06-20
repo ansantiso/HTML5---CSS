@@ -90,17 +90,17 @@
   align-items: center;
   justify-content: center;
 }
-.icon-desc .icon {
+.icon-desc i {
   color: #0075ff;
-  font-size: 8rem;
+  font-size: 10rem;
   padding: 0;
   text-align: center;
 }
 .icon-desc .title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
-  margin-top: -2rem;
+  margin-top: -1rem;
 }
 
 body {
@@ -142,7 +142,7 @@ body {
   color: #444;
 }
 
-.sec-features, .sec-onboarding .intro, .sec-benefits .intro {
+.sec-features {
   width: 100%;
   padding: 3rem;
   max-width: 992px;
@@ -150,46 +150,59 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px 48px 0px 48px;
 }
-.sec-features .intro, .sec-onboarding .intro .intro, .sec-benefits .intro .intro {
+.sec-features .intro {
+  padding: 4rem 0rem 2rem 0rem;
   text-align: center;
 }
-.sec-features .intro h3, .sec-onboarding .intro .intro h3, .sec-benefits .intro .intro h3 {
+.sec-features .intro h3 {
   font-size: 1.8rem;
 }
-.sec-features .intro p, .sec-onboarding .intro .intro p, .sec-benefits .intro .intro p {
+.sec-features .intro p {
   font-size: 0.9rem;
   color: #888;
 }
-.sec-features .features, .sec-onboarding .intro .features, .sec-benefits .intro .features {
+.sec-features .features {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-.sec-features .features .text, .sec-onboarding .intro .features .text, .sec-benefits .intro .features .text {
+.sec-features .features .text {
   padding: 2rem 0rem;
   flex: 1;
 }
-.sec-features .features .text .feature, .sec-onboarding .intro .features .text .feature, .sec-benefits .intro .features .text .feature {
+.sec-features .features .text .feature {
   display: flex;
   flex-direction: row;
 }
-.sec-features .features .text .feature .description, .sec-onboarding .intro .features .text .feature .description, .sec-benefits .intro .features .text .feature .description {
+.sec-features .features .text .feature .description {
   margin-left: 1rem;
   max-width: 20rem;
 }
-.sec-features .features .text .feature .description .description-title, .sec-onboarding .intro .features .text .feature .description .description-title, .sec-benefits .intro .features .text .feature .description .description-title {
+.sec-features .features .text .feature .description .description-title {
   font-size: 1.15rem;
 }
-.sec-features .features .text .feature .description .description-text, .sec-onboarding .intro .features .text .feature .description .description-text, .sec-benefits .intro .features .text .feature .description .description-text {
+.sec-features .features .text .feature .description .description-text {
   font-size: 1rem;
 }
-.sec-features .features .image, .sec-onboarding .intro .features .image, .sec-benefits .intro .features .image {
+.sec-features .features .image {
   max-width: 20rem;
 }
 
 .sec-benefits {
   border-top: 1px solid #ddd;
+}
+.sec-benefits .intro {
+  padding: 4rem 0rem 2rem 0rem;
+  text-align: center;
+}
+.sec-benefits .intro h3 {
+  font-size: 1.8rem;
+}
+.sec-benefits .intro p {
+  font-size: 0.9rem;
+  color: #888;
 }
 .sec-benefits .benefits-cards {
   width: 100%;
@@ -215,6 +228,47 @@ body {
   font-size: 0.9rem;
   text-align: center;
   color: rgba(255, 255, 255, 0.6666666667);
+}
+
+.sec-onboarding .intro {
+  padding: 4rem 0rem 2rem 0rem;
+  text-align: center;
+}
+.sec-onboarding .intro h3 {
+  font-size: 1.8rem;
+}
+.sec-onboarding .intro p {
+  font-size: 0.9rem;
+  color: #888;
+}
+.sec-onboarding .steps {
+  padding: 0 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sec-onboarding .steps .step-separator {
+  flex: 1;
+  margin: 0 1rem;
+  border-top: 2px solid #ddd;
+}
+
+.sec-footer-cta {
+  background-color: #f4f8fe;
+  padding: 5rem;
+  background-image: url(../assets/img/bg.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  margin-top: 5rem;
+}
+.sec-footer-cta .footer-cta {
+  max-width: 50%;
+}
+.sec-footer-cta .footer-cta .cta-title {
+  font-size: 2rem;
+}
+.sec-footer-cta .footer-cta .cta-description {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=index.css.map */

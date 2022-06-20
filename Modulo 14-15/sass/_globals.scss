@@ -1,4 +1,5 @@
 @use "components";
+//Mixins
 @mixin section-display {
     width: 100%;
     padding: 3rem;
@@ -6,6 +7,19 @@
     margin: auto;
 }
 
+@mixin intros {
+    padding: 4rem 0rem 2rem 0rem;
+    text-align: center;
+    h3 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 0.9rem;
+        color: #888;
+    }
+}
+
+//Scss
 body {
     padding: 0;
     margin: 0;
@@ -47,15 +61,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 48px 0px 48px;
     .intro {
-        text-align: center;
-        h3 {
-            font-size: 1.8rem;
-        }
-        p {
-            font-size: 0.9rem;
-            color: #888;
-        }
+        @include intros;
     }
     .features {
         display: flex;
@@ -88,8 +96,7 @@ body {
 .sec-benefits {
     border-top: 1px solid #ddd;
     .intro {
-        @extend .sec-features,
-        .intro;
+        @include intros;
     }
     .benefits-cards {
         width: 100%;
@@ -120,7 +127,35 @@ body {
 
 .sec-onboarding {
     .intro {
-        @extend .sec-features,
-        .intro;
+        @include intros;
+    }
+    .steps {
+        padding: 0 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .step-separator {
+            flex: 1;
+            margin: 0 1rem;
+            border-top: 2px solid #ddd;
+        }
+    }
+}
+
+.sec-footer-cta {
+    background-color: components.$color-footer;
+    padding: 5rem;
+    background-image: url(../assets/img/bg.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    margin-top: 5rem;
+    .footer-cta {
+        max-width: 50%;
+        .cta-title {
+            font-size: 2rem;
+        }
+        .cta-description {
+            font-size: 2rem;
+        }
     }
 }
