@@ -1,5 +1,6 @@
+//Componenetes
 @use "components";
-//Mixins
+//Mixins globales
 @mixin section-display {
     width: 100%;
     padding: 3rem;
@@ -8,7 +9,7 @@
 }
 
 @mixin intros {
-    padding: 4rem 0rem 2rem 0rem;
+    padding: 4rem 1rem 2rem 1rem;
     text-align: center;
     h3 {
         font-size: 1.8rem;
@@ -20,6 +21,10 @@
 }
 
 //Scss
+html {
+    min-width: 100vw;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -52,6 +57,12 @@ body {
         }
         .home-description {
             color: #444;
+            width: 300px;
+        }
+        .lead-magnet {
+            .input-col {
+                max-width: 200px;
+            }
         }
     }
 }
@@ -156,6 +167,26 @@ body {
         }
         .cta-description {
             font-size: 2rem;
+        }
+    }
+}
+
+//Responsive
+@media (max-width: 768px) {
+    .sec-onboarding {
+        .intro {
+            padding-bottom: 0;
+        }
+        .steps {
+            flex-direction: column;
+        }
+    }
+    .sec-footer-cta {
+        background-image: none;
+        .footer-cta {
+            max-width: 100%;
+            text-align: center;
+            margin: auto;
         }
     }
 }

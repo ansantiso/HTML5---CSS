@@ -103,6 +103,10 @@
   margin-top: -1rem;
 }
 
+html {
+  min-width: 100vw;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -140,6 +144,10 @@ body {
 }
 .sec-home .home-cta .home-description {
   color: #444;
+  width: 300px;
+}
+.sec-home .home-cta .lead-magnet .input-col {
+  max-width: 200px;
 }
 
 .sec-features {
@@ -153,7 +161,7 @@ body {
   padding: 0px 48px 0px 48px;
 }
 .sec-features .intro {
-  padding: 4rem 0rem 2rem 0rem;
+  padding: 4rem 1rem 2rem 1rem;
   text-align: center;
 }
 .sec-features .intro h3 {
@@ -194,7 +202,7 @@ body {
   border-top: 1px solid #ddd;
 }
 .sec-benefits .intro {
-  padding: 4rem 0rem 2rem 0rem;
+  padding: 4rem 1rem 2rem 1rem;
   text-align: center;
 }
 .sec-benefits .intro h3 {
@@ -231,7 +239,7 @@ body {
 }
 
 .sec-onboarding .intro {
-  padding: 4rem 0rem 2rem 0rem;
+  padding: 4rem 1rem 2rem 1rem;
   text-align: center;
 }
 .sec-onboarding .intro h3 {
@@ -269,6 +277,23 @@ body {
 }
 .sec-footer-cta .footer-cta .cta-description {
   font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .sec-onboarding .intro {
+    padding-bottom: 0;
+  }
+  .sec-onboarding .steps {
+    flex-direction: column;
+  }
+  .sec-footer-cta {
+    background-image: none;
+  }
+  .sec-footer-cta .footer-cta {
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

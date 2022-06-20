@@ -1,3 +1,4 @@
+//Mixins de componentes
 @mixin btn-base {
     border-radius: 0.25rem;
     padding: 0.25rem 1.5rem;
@@ -9,8 +10,10 @@
     padding: 0.1rem 1rem;
 }
 
+//Variables de color
 $color-main: #0075ff;
 $color-footer: #f4f8fe;
+//Componentes
 .btn-main {
     @include btn-base();
     color: white;
