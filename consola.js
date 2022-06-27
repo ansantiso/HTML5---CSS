@@ -1,0 +1,1 @@
+let respuesta = prompt('Introduce la edad');
